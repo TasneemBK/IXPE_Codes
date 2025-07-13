@@ -1,0 +1,21 @@
+statistic chi
+data 1:1 ixpe03010101_det3_evt2_v01.pha
+ignore 1:1-50,200-375
+
+method leven 10 0.01
+abund angr
+xsect vern
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+model  TBabs(diskbb + nthComp)
+       0.374023      0.001          0          0     100000      1e+06
+       0.945647       0.01          0          0       1000       1000
+        189.593       0.01          0          0      1e+20      1e+24
+        1.09772       0.01      1.001      1.001          5         10
+        2.17582        0.1          1          5       1000       1000
+= p2
+              1         -1          0          0          1          1
+              0      -0.01     -0.999     -0.999         10         10
+      0.0537712       0.01          0          0      1e+20      1e+24
+bayes off
